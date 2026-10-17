@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+//program for 2D array
 int main(){
     int nrows = 2;
 int ncols = 5;
@@ -7,7 +8,6 @@ int i, j;
 char **pvow = (char **) malloc(nrows * sizeof(char *));
 pvow[0] = (char *) malloc(ncols * sizeof(char));
 pvow[1] = (char *) malloc(ncols * sizeof(char));
-
 pvow[0][0] = 'A';
 pvow[0][1] = 'E';
 pvow[0][2] = 'I';
