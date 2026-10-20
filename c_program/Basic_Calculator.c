@@ -1,16 +1,19 @@
 #include <stdio.h>
-
+#include <math.h>
 int main() {
     char operator;
     double num1, num2, result;
 
-    printf("Enter an operator (+, -, *, /): ");
+    printf("Enter an operator (+, -, *, /,^): ");
     scanf(" %c", &operator); // Note the space to skip whitespace
 
     printf("Enter two operands: ");
     scanf("%lf %lf", &num1, &num2);
 
     switch (operator) {
+        case '^':
+            result = pow(num1, num2);
+            break; 
         case '+':
             result = num1 + num2;
             break;
