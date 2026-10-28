@@ -94,7 +94,7 @@ int main() {
 
     char result = decode_dtmf(sample_buffer);
     if (result != '\0') {
-        printf("Detected: %c\n", result);
+        printf("Detected:%c\n", result);
     } else {
         printf("No valid tone detected.\n");
     }
